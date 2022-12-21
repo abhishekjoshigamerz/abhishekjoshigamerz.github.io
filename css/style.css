@@ -1,168 +1,147 @@
-*{
-    margin: 0;
-    padding: 0;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.8rem;
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8rem;
 }
 
-.header--title{
-    width: 100%;
-    text-align: center;
-    color:white;
-    margin-top:20px;
+.header--title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
 }
 
-.watch--container{
-    display: grid;
-    grid-template-columns: 3fr 2fr 3fr;
-    align-items: center;
-    height:60vh;
+.watch--container {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  align-items: center;
+  height: 60vh;
 }
 
-.leftBand{
-    width: 100%;
-    height:200px;
-    background-color: black;
-    z-index:-1;
+.leftBand {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  z-index: -1;
 }
-.watch{
-    height:280px;
-    width: 100%;
-    border-radius: 10%;
-    outline: 1px #1a1a1b solid;
-    background-color: #151516;
-    transform: rotateX('40deg');  
+.watch {
+  height: 280px;
+  width: 100%;
+  border-radius: 10%;
+  outline: 1px #1a1a1b solid;
+  background-color: #151516;
+  transform: rotateX("40deg");
 }
-.rightBand{
-    width: 100%;
-    height:200px;
-    background-color: black;
-    z-index: -1;
+.rightBand {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  z-index: -1;
 }
 .watch-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
 }
 
-.watch-top{
-    width: 100%;
-    height: 100px;
-    background-color: aliceblue;  
+.watch-top {
+  width: 100%;
+  height: 100px;
+  background-color: aliceblue;
 }
 
-.watch-inner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height:100vh;
-    width: 90%;
-    background-color: #B8BDB8;
-    border-style: solid;
-    
+.watch-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 90%;
+  background-color: #b8bdb8;
+  border-style: solid;
 }
 
-.watch-inner::before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 16vh;
-    z-index:  5;
-  }
-
-  .pause-and-start-container {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    height: 18px;
-    width: 100%;
-    position: relative;
-    }
-
-    .pause{
-        position:absolute;
-        left: -80;
-        top:-20px;
-    }
-  .start{
-    position:absolute;
-    right: -70px;
-    top:-20px;
-  }
-  
-
-.watch-top p{
-    font-size:16px;
-    text-align: center;
-    margin-top:10px;
+.pause-and-start-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  height: 18px;
+  width: 100%;
+  position: relative;
 }
 
-.header--timer{
-    color: #272626;
-    font-size: 25px;
-    font-weight: 700;
-    margin-left:15px;
+.pause {
+  position: absolute;
+  left: -80;
+  top: -20px;
+}
+.start {
+  position: absolute;
+  right: -70px;
+  top: -20px;
+}
+
+.watch-top p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.header--timer {
+  color: #272626;
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 15px;
 }
 
 .timer {
-    color: #272626;
-    font-size: 35px;
-    font-weight: 700;
+  color: #272626;
+  font-size: 35px;
+  font-weight: 700;
 }
 
-
 .timer #milliseconds {
-    width: 55px;
-    font-size: 18px;
+  width: 55px;
+  font-size: 18px;
 }
 
 .stop {
-    font-size: 16px;
-    width: 150px;
-    text-align: end;
-    font-family: 'Orbitron', sans-serif;
-    padding-right: 4px;
-  }
-.button--areas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  font-size: 16px;
+  width: 150px;
+  text-align: end;
+  font-family: "Orbitron", sans-serif;
+  padding-right: 4px;
+}
+.button--areas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.startTimer{
-    margin-left:200px;
-    width: 120px;
-    height:40px;
+.startTimer {
+  margin-left: 200px;
+  width: 120px;
+  height: 40px;
 }
-.pauseTimer{
-    width: 120px;
-    height: 40px;
+.pauseTimer {
+  width: 120px;
+  height: 40px;
 }
-.resetTimer{
-    width: 120px;
-    height:40px;
-    margin-right:200px;
+.resetTimer {
+  width: 120px;
+  height: 40px;
+  margin-right: 200px;
 }
 .watchStartButton,
 .watchPauseButton,
-.watchStopButton{
-    background-color: #B8BDB8;
-    border:0;
+.watchStopButton {
+  background-color: #b8bdb8;
+  border: 0;
 }
-
-
-  
-
-  
-    
-   
-    
