@@ -1,2 +1,2 @@
-# stopwatch.github.io
-Stop watch project which is hosted on github.
+# StopWatchProject
+A Front End project for stop watch timer.

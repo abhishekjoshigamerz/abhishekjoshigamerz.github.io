@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- Contains watch section here  -->
+    <article class="watch--container">
+        <div class="leftBand"></div>
+        <div class="watch"> 
+            <div class="watch-container">
+                <div class="watch-top">
+                    <p>STOP WATCH</p>
+                </div>
+                <div class="watch-inner">
+                  <div class="watch-inner-screen ">
+                    <p class="header--timer">
+                      <!-- H for hours M for minutes S for Seconds and m for milliseconds -->
+                      <span> H  </span>:<span>  M  </span>  :  <span> S </span>  :  <span>m</span>
+                    </p>
+                    <p class="timer">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+                    </p>
+                    
+                  </div>
+                </div>
+                
+              </div>
+             
+        </div>
+        <div class="rightBand"></div>
+       
+    </article>
+    <!-- div for watch buttons  -->
+    <article class="button--areas ">
+      <button class="startTimer ">START</button>
+      <button class="pauseTimer ">STOP</button>
+      <button class="resetTimer">RESET</button>
+    </article>
+
+    <script src="scripts/timer.js" ></script>
+</body>
+</html>
